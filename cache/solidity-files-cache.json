@@ -142,6 +142,78 @@
       "artifacts": [
         "TestGas"
       ]
+    },
+    "/Users/christiankobril/Desktop/Main/Bridge/web3-eth-project/contracts/Hero.sol": {
+      "lastModificationDate": 1647441892240,
+      "contentHash": "19a4c8f6314a837ffe8a6b6974c647bc",
+      "sourceName": "contracts/Hero.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Hero"
+      ]
+    },
+    "/Users/christiankobril/Desktop/Main/Bridge/web3-eth-project/contracts/TestHero.sol": {
+      "lastModificationDate": 1647440090914,
+      "contentHash": "6159e5b0027c93748456463228645ab4",
+      "sourceName": "contracts/TestHero.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Hero.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestHero"
+      ]
     }
   }
 }
