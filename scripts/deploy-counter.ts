@@ -1,20 +1,20 @@
 import "@nomiclabs/hardhat-ethers";
-import { Contract } from 'ethers';
-import { ethers } from 'hardhat';
+import { Contract } from "ethers";
+import { ethers } from "hardhat";
 
 async function deploy() {
-    const Counter = await ethers.getContractFactory("Counter");
-    const counter = await Counter.deploy();
-    await counter.deployed();
+  const Counter = await ethers.getContractFactory("Counter");
+  const counter = await Counter.deploy();
+  await counter.deployed();
 
-    console.log(counter.address)
-    return counter;
+  console.log(counter.address);
+  return counter;
 }
 
 // @ts-ignore
 async function count(counter) {
-    await counter.count();
-    console.log("Counter: ", await counter.getCounter());
+  await counter.count();
+  console.log("Counter: ", await counter.getCounter());
 }
 
-deploy().then(count)
+deploy().then(count);

@@ -214,6 +214,82 @@
       "artifacts": [
         "TestHero"
       ]
+    },
+    "/Users/christiankobril/Desktop/Main/Bridge/web3-eth-project/contracts/Fallback.sol": {
+      "lastModificationDate": 1648730305063,
+      "contentHash": "e1c888a82e5faf1ca9b1b11bf998a310",
+      "sourceName": "contracts/Fallback.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Fallback",
+        "IFallback"
+      ]
+    },
+    "/Users/christiankobril/Desktop/Main/Bridge/web3-eth-project/contracts/A.sol": {
+      "lastModificationDate": 1648734348394,
+      "contentHash": "fe5da719d81f8ef8d3204dcab40c6d63",
+      "sourceName": "contracts/A.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "A",
+        "B"
+      ]
     }
   }
 }
