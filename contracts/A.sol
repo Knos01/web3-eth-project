@@ -2,35 +2,39 @@
 
 pragma solidity ^0.8.0;
 import 'hardhat/console.sol';
+import "./Storage.sol";
 
 contract A {
-  uint256 a;
-
   function setA(uint256 _a) public {
-    a = _a;
+    AppStorage storage s = Storage.get();
+    s.a = _a;
   }
 
   function getA() public view returns (uint256) {
-    return a;
+    AppStorage storage s = Storage.get();
+
+    return s.a;
   }
 }
 
 contract B {
-  uint256 b;
-  address ContractA;
+  AppStorage s;
 
   constructor(address _B) {
-    ContractA = _B;
+    s.ContractA = _B;
+    s.b = 4;
+    s.c = 0x45;
+    s.d = 0xF5;
   }
 
   function setB(uint256 _b) public {
-    //b = _b;
+    s.b = _b;
 
     //A(ContractA).setA(_a + 1);
-    ContractA.delegatecall(abi.encodeWithSignature('setA(uint256)', _b + 1));
+    s.ContractA.delegatecall(abi.encodeWithSignature('setA(uint256)', _b + 1));
   }
 
   function getB() public view returns (uint256) {
-    return b;
+    return s.b;
   }
 }
